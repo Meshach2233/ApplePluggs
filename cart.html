@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="./img/PLUGGS-logo.png" alt="" />
+            <h3>APPLE PLUGGS <span id="empire">EMPIRE</span></h3>
+          </a>
+        </div>
+
+        <div class="idk">
+          <button><span><i class="fa-solid fa-shop"></i></span> SHOP NOW</button>
+          <input type="search" id="searchInput" placeholder="Search in cart..." />
+        </div>
+
+        <ul class="icon">
+          <li>
+            <a href="#"><span><i class="fa-regular fa-heart"></i></span></a>
+          </li>
+          <li>
+            <a href="cart.html" id="cart-link">
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
+              <span id="cart-count">Cart (0)</span>
+            </a>
+          </li>
+        </ul>
+
+        <p><a href="#"><i class="fa-regular fa-circle-user"></i></a></p>
+      </nav>
+    </div>
+  </header>
+  
+    <section class="reveal">
+    <section id="home">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">HOME</a></li>
+                    <li><a href="#">COLLECTIONS</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="#">OTHER PAGES</a></li>
+                    <li><a href="#">BLOG POSTS</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">🔥 Hot Deals</a></li>
+                    <li><a href="#"><i class="fa-regular fa-truck"></i> Track Your Order</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Store Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    </section>
+
+    <main  id="carttt">
+        <div class="container">
+            <h1>Your Cart Items</h1>
+            <div id="cartItems" class="cart-items"></div>
+            <div id="cartTotal" class="cart-total"></div>
+            <div class="cart-actions">
+                <button id="clear-cart" class="button button--secondary" type="button">Clear Cart</button><br>
+                <a class="button" href="products.html">← Continue Shopping</a>        
+            </div>
+        </div>
+    </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
